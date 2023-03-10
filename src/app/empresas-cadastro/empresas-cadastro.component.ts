@@ -51,16 +51,17 @@ export class EmpresasCadastroComponent implements OnInit {
 
     const dados = this.formCadastro.value;
 
-    this.httpClient.post(url, dados, { responseType: 'text' }).subscribe({
-      next: (result) => {
-        this.mensagem_sucesso = result;
-        this.formCadastro.reset();
-      },
-      error: (e) => {
-        console.log(e)
-        this.mensagem_erro = e.error;
-      }
-    });
+    this.httpClient.post(url, dados, { responseType: 'text' }).
+      subscribe({
+        next: (result) => {
+          this.mensagem_sucesso = result;
+          this.formCadastro.reset();
+        },
+        error: (e) => {
+          console.log(e)
+          this.mensagem_erro = e.error;
+        }
+      });
   }
 
 }
