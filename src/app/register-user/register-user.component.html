@@ -1,0 +1,50 @@
+<div class="row">
+    <div class="col-md-8 offset-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Crie sua Conta de Usuário</h5>
+                <p class="card-subtitle">Entre os dados para cadastrar sua conta.</p>
+                <hr />
+
+                <form>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Nome do usuário:</label>
+                            <input type="text" class="form-control" placeholder="Informe seu nome" />
+                        </div>
+                        <div class="col-md-6">
+                            <label>Email de acesso:</label>
+                            <input type="text" class="form-control" placeholder="Informe seu email" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Senha de acesso:</label>
+                            <input type="password" class="form-control" placeholder="Senha de acesso" />
+                        </div>
+                        <div class="col-md-6">
+                            <label>Confirme sua senha:</label>
+                            <input type="password" class="form-control" placeholder="Confirme sua senha" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+
+                        <input type="submit" value="Realizar Cadastro" class="btn btn-success" />
+
+                        &nbsp;
+
+                        <a [routerLink]="['/']" class="btn btn-light">
+                            Já possui conta? <strong>Acesse aqui.</strong>
+                        </a>
+
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
